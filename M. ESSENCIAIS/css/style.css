@@ -1,0 +1,336 @@
+/**********************************/
+/* 1. Estilos Gerais
+/* 2. Main
+/* 3. Navbar
+/* 4. Search
+/* 5. Content
+/* 6. Form 
+/* 7. Course
+/* 6. Footer
+/**********************************/
+
+/**********************************/
+/* 1. Estilos Gerais
+/**********************************/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif NONE;  
+}
+
+/**********************************/
+/* 2. Main
+/**********************************/
+.main {
+    width: 100%;
+    background-image: linear-gradient(to right, #1d1d1d, #C52233,#f8d6d6);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+/**********************************/
+/* 3. Navbar
+/**********************************/
+.navbar {
+    width: 100%;
+    height: 75px;
+    margin: auto;
+    background: linear-gradient(to top, rgba(0,0,0,0.6)50%, rgba(0,0,0,0.6)50%);
+}
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo {
+    width: 120px;
+    align-items: center;
+    padding-left: 10px;
+    float: left;
+    margin-left: 80px;
+    margin-top: -7px;
+    margin-right: 100px;
+}
+.menu {
+    width: 600px;
+    float: left;
+    height: 70px;
+    margin-right: 120px;
+}
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+ul li a {
+    
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover {
+    color: #ff0078; 
+}
+
+/**********************************/
+/* 4. Search (Dentro da "navbar"
+/**********************************/
+.search {
+    width: 330px;
+    float: left;
+    margin-left: 180px;
+}
+.srch {
+    font-family: 'Times New Roman', sans-serif;
+    width: 200px;
+    height: 18px;
+    background: transparent;
+    border: 1px solid #ff0078;
+    margin-top: 12px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    align-items: baseline;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;   
+}
+.btn {
+    width: 100px;
+    height: 40px;
+    background: #ff0078;
+    border: 2px solid #ff0078;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.btn:focus {
+    outline: none;
+}
+.srch:focus {
+    outline: none;
+}
+
+/**********************************/
+/* 5. Content (Controla o Texto de apresentação e o FORMULÁRIO LOGIN)
+/**********************************/
+.content {
+    width: 1200px;
+    height: auto;
+    margin-top: 180px;
+    margin-left: 150px;
+    color: #fff;
+    position: relative;
+   
+}
+.content .par {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+.content h1 {
+    font-family: 'Times New Roman';
+    font-size: 80px;
+    padding-left: 20px;
+    margin-top: 9%;
+    padding-bottom: 25px;
+    letter-spacing: 2px;
+}
+.content h4 {
+    font-family: Arial;
+    text-align: center;
+    font-size: 30px;
+    padding-left: 20px;
+    margin-left: -695px;
+}
+.content .cn {
+    width: 160px;
+    height: 40px;
+    background: #ff0078;;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 175px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.content .cn a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s ease;
+}
+.cn:hover {
+    background: #fff;
+}
+.content span {
+    color: #ff0078;
+}
+
+/**********************************/
+/* 6. Form (formulário)//Tem position ABSOLUTE e seu PAI Content tem position RELATIVE.
+/**********************************/
+.form {
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;    /*--- Controla a POSIÇÃO VERTICAL DO FORMULÁRIO ---*/
+    left: 870px;      /*--- Controla a POSIÇÃO HORIZONTAL DO FORMULÁRIO ---*/
+    border-radius: 10px;
+    padding: 25px;
+}
+.form h2 {
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff0078;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+.form input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff0078;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+.form input:focus {
+    outline: none;
+}
+::placeholder {
+    color: #fff;
+    font-family: Arial;
+}
+.btnn {
+    width: 240px;
+    height: 40px;
+    background: #ff0078;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.btnn:hover {
+    color: #ff0078;
+    background: #fff;
+}
+.btnn a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link {
+    font-family: Arial;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a {
+    text-decoration: none;
+    color: #ff0078;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.icons a {
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon {
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.4s;
+}
+.icons ion-icon:hover {
+    color: #ff0078;
+}
+
+/**********************************/
+/* 2. Course
+/**********************************/
+
+.course {
+    width: 80%;            /**/
+    margin: auto;
+    text-align: center;    /**/
+    padding-top: 100px;    /**/
+}
+.row {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+.course-col {                /* A DIV (.course-col) vai estilizar as 3 Divs de uma só vez. */
+    background: #A6287C;            /*background: #d1ccc0;* COR ROXA DO SITE #9B0991;*/
+    flex-basis: 31%;         /* Flex-basis: 31%; : =  ARRUMOU AS 3 DIVS, COM OS TEXTOS. */
+    border-radius: 10%;
+    padding: 20px 12px;        /* Padding: 20px 12px;  =  Espaço interno nas 3 DIVS. */
+    box-sizing: border-box;    /* Box-sizing: border-box;  = Aumenta o espaço entre as 3 DIVS. */
+    margin-bottom: 5%;        /* Margin-bottom: 5%;  =  Aumenta o espaço das 3 DIVS, com o elemento abaixo. */
+    transition: 0.5s;         /* Para o efeito da Borda das Divs "APARECEREM." (.course-col:hover) */
+}
+.course h1 {
+    color: #ff0078;
+    font-family: "Montserrat";
+    font-size: 50px;
+    text-align: center;
+}
+.course .parag {
+    color: #000;
+    font-family: "Poppins";
+    font-size: 30px;
+    text-align: center;
+}
+h3 {              /* Vamos arrumar o título */
+    text-align: center; 
+    color: #fff;   /* Alinhar o texto ao centro */
+    font-weight: 600;      /* A espessura da letra */
+    margin: 10px 0px;      /* As margens nas 4 extremidades */
+}
+.course-col:hover {        /* Vamos coloacar uma borda na DIV " Que aparece quando o curso passa por cima */
+    box-shadow: 0 0 20px 0px;    
+} 
+
+/* INÍCIO DO RESPONSIVO (COURSE)- PARA TÊLAS MENORES - ALGUNS ITENS TEM QUE "DIMINUIR OS VALORES": */
+
+@media(max-width: 700px) {
+    .row {
+        flex-direction: column;
+         /* PARA O TAMANHO DO CELULARES, REDIRECIONAR EM COLUNAS AS DIVS. */
+    }    
+}
+
+/* FIM DA SECTION .COURSE (COURSE.HTML) */  /**/
